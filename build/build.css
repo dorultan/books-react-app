@@ -1,0 +1,43 @@
+.global {
+	widows: 100%;
+	text-align: center;
+	padding: 10vw;
+}
+
+.global h2 {
+	font-weight: bold;
+	margin: calc(10px + 3vw);
+}
+
+/* galery styles */
+
+.galery {
+	position: relative;
+	display: flex;
+	box-shadow: 0 0 1px 0 #999;
+	padding: 1vw;
+	flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-user-select: flex-start;
+	-moz-user-select: flex-start;
+	-ms-user-select: flex-start;
+	-o-user-select: flex-start;
+	user-select: flex-start;
+}
+
+.galery .flex-col {
+	flex-grow: 1;
+	flex-basis: 250px;
+	border: 1px solid #dbdbdb;
+	margin: 10px;
+	flex-shrink: 5;
+	max-width: 335px;
+}
+
+.galery .flex-col a {
+	
+}
+
+.galery .flex-col a img {
+	object-fit: cover;
+}
