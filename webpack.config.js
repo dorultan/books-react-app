@@ -1,5 +1,5 @@
 const config = {
-	mode: 'development',
+	mode: process.env.NODE_ENV || 'development',
 	entry: ['babel-polyfill', './app/app.js'],
 	output: {
 		filename: 'bundle.js',
@@ -18,7 +18,7 @@ const config = {
 	},
 
 	devServer: {
-		port: process.env.port || 3000,
+		port: process.env.PORT || 3000,
 		contentBase: './build',
 		inline: true
 	}
